@@ -1,0 +1,43 @@
+
+    <div class="card">
+
+        <h2>Transparency</h2>
+
+        <p>
+            Please verify the organisation and payment details before making
+            a donation. Donations should only be sent to the official
+            payment details displayed on this website.
+        </p>
+
+    </div>
+
+</div>
+
+
+<footer>
+    <p>© 2026 Child Support Organisation</p>
+    <p>Every child deserves a better future.</p>
+</footer>
+
+
+<script>
+
+function copyBTC() {
+
+    const address = document.getElementById("btcAddress").innerText;
+
+    if (address === "YOUR_BTC_ADDRESS_HERE") {
+        alert("The Bitcoin address has not been added yet.");
+        return;
+    }
+
+    navigator.clipboard.writeText(address);
+
+    alert("Bitcoin address copied!");
+
+}
+
+</script>
+
+</body>
+</html>
